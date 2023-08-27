@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khan Academy-like Home Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #header {
+    background-color: #00a1e0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  #navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #content {
+    margin: 20px;
+  }
+
+  .course-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .course-card h2 {
+    color: #00a1e0;
+    margin-top: 0;
+  }
+
+  .course-card p {
+    color: #666;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+</style>
+</head>
+<body>
+  <div id="header">
+    <h1>Welcome to Our Learning Platform</h1>
+    <p>Learn and explore a wide range of subjects.</p>
+  </div>
+
+  <div id="navbar">
+    <a href="#">Home</a> |
+    <a href="#">Courses</a> |
+    <a href="#">Subjects</a> |
+    <a href="#">About Us</a>
+  </div>
+
+  <div id="content">
+    <div class="course-card">
+      <h2>Mathematics</h2>
+      <p>Explore the fascinating world of mathematics with our interactive courses.</p>
+      <a href="#" class="button">View Courses</a>
+    </div>
+
+    <div class="course-card">
+      <h2>Science</h2>
+      <p>Unlock the secrets of the universe through our engaging science lessons.</p>
+      <a href="#" class="button">View Courses</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Your Learning Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
