@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>User Login</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h1>User Login</h1>
+        <h:messages />
+
+        <h:outputLabel for="email" value="Email:" />
+        <h:inputText id="email" value="#{userBean.email}" required="true" />
+
+        <h:outputLabel for="password" value="Password:" />
+        <h:inputSecret id="password" value="#{userBean.password}" required="true" />
+
+        <h:commandButton value="Login" action="#{userBean.loginUser}" />
+    </h:form>
+</h:body>
+</html>
+----------------------------------------------
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Welcome</title>
+</h:head>
+<h:body>
+    <h1>Welcome, #{userBean.email}!</h1>
+    <!-- Additional content for the welcome page -->
+</h:body>
+</html>
+------------------------------
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Login Failed</title>
+</h:head>
+<h:body>
+    <h1>Login Failed</h1>
+    <p>Invalid email or password. Please try again.</p>
+    <h:link value="Back to Login" outcome="login" />
+</h:body>
+</html>
+
